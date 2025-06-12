@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Festejando Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Festejando Campo e Cidade</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Celebrando a Cultura do Campo e da Cidade</h2>
+            <p>Venha conhecer os melhores eventos e festas de todas as regiões!</p>
+        </section>
+
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <div class="eventos-lista">
+                <article class="evento">
+                    <h3>Festa Junina</h3>
+                    <p>Uma tradicional festa de São João, com comidas típicas e muita animação!</p>
+                    <button class="btn-evento" onclick="mostrarInfo('festa-junina')">Saiba mais</button>
+                    <p id="festa-junina" class="info-evento" style="display:none;">Data: 24 de Junho | Local: Praça Central</p>
+                </article>
+                <article class="evento">
+                    <h3>Festival de Música Sertaneja</h3>
+                    <p>Os melhores artistas da música sertaneja reunidos em um único lugar.</p>
+                    <button class="btn-evento" onclick="mostrarInfo('festival-musica')">Saiba mais</button>
+                    <p id="festival-musica" class="info-evento" style="display:none;">Data: 15 de Julho | Local: Arena do Campo</p>
+                </article>
+                <article class="evento">
+                    <h3>CarnaCidade</h3>
+                    <p>O melhor carnaval de rua da cidade, com blocos e desfiles inesquecíveis.</p>
+                    <button class="btn-evento" onclick="mostrarInfo('carna-cidade')">Saiba mais</button>
+                    <p id="carna-cidade" class="info-evento" style="display:none;">Data: 25 de Fevereiro | Local: Centro da Cidade</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>O "Festejando Campo e Cidade" é uma plataforma dedicada a promover os maiores eventos culturais e festivos de várias regiões, trazendo a alegria e a tradição para todas as pessoas.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações sobre os eventos e parcerias.</p>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Festejando Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
