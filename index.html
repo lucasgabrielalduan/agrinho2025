@@ -22,28 +22,33 @@
 
     <main>
         <section class="hero">
-            <h2>Celebrando a Cultura do Campo e da Cidade</h2>
-            <p>Venha conhecer os melhores eventos e festas de todas as regiões!</p>
+            <div class="hero-content">
+                <h2>Celebrando a Cultura do Campo e da Cidade</h2>
+                <p>Venha conhecer os melhores eventos e festas de todas as regiões!</p>
+            </div>
         </section>
 
         <section id="eventos">
-            <h2>Eventos</h2>
+            <h2>Eventos Destaque</h2>
             <div class="eventos-lista">
                 <article class="evento">
+                    <img src="img/festa-junina.jpg" alt="Pessoas dançando quadrilha em uma festa junina">
                     <h3>Festa Junina</h3>
-                    <p>Uma tradicional festa de São João, com comidas típicas e muita animação!</p>
+                    <p>Uma tradicional festa de São João, com comidas típicas, fogueira e muita animação!</p>
                     <button class="btn-evento" onclick="mostrarInfo('festa-junina')">Saiba mais</button>
                     <p id="festa-junina" class="info-evento" style="display:none;">Data: 24 de Junho | Local: Praça Central</p>
                 </article>
                 <article class="evento">
+                    <img src="img/festival-musica.jpg" alt="Palco de show sertanejo com público aplaudindo">
                     <h3>Festival de Música Sertaneja</h3>
-                    <p>Os melhores artistas da música sertaneja reunidos em um único lugar.</p>
+                    <p>Os melhores artistas da música sertaneja reunidos em um único lugar para shows inesquecíveis.</p>
                     <button class="btn-evento" onclick="mostrarInfo('festival-musica')">Saiba mais</button>
                     <p id="festival-musica" class="info-evento" style="display:none;">Data: 15 de Julho | Local: Arena do Campo</p>
                 </article>
                 <article class="evento">
+                    <img src="img/carna-cidade.jpg" alt="Pessoas fantasiadas em um bloco de carnaval de rua">
                     <h3>CarnaCidade</h3>
-                    <p>O melhor carnaval de rua da cidade, com blocos e desfiles inesquecíveis.</p>
+                    <p>O melhor carnaval de rua da cidade, com blocos animados, desfiles e muita folia.</p>
                     <button class="btn-evento" onclick="mostrarInfo('carna-cidade')">Saiba mais</button>
                     <p id="carna-cidade" class="info-evento" style="display:none;">Data: 25 de Fevereiro | Local: Centro da Cidade</p>
                 </article>
@@ -51,13 +56,13 @@
         </section>
 
         <section id="sobre">
-            <h2>Sobre</h2>
-            <p>O "Festejando Campo e Cidade" é uma plataforma dedicada a promover os maiores eventos culturais e festivos de várias regiões, trazendo a alegria e a tradição para todas as pessoas.</p>
+            <h2>Sobre Nós</h2>
+            <p>O "Festejando Campo e Cidade" é uma plataforma dedicada a promover os maiores eventos culturais e festivos de várias regiões. Nosso objetivo é conectar pessoas com a alegria e a tradição das celebrações que acontecem tanto no campo quanto na cidade, valorizando a diversidade cultural do nosso país.</p>
         </section>
 
         <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para mais informações sobre os eventos e parcerias.</p>
+            <h2>Entre em Contato</h2>
+            <p>Envie-nos uma mensagem para mais informações sobre os eventos, oportunidades de parceria ou sugestões.</p>
             <form id="form-contato">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -66,9 +71,9 @@
                 <input type="email" id="email" name="email" required>
                 
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
                 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
